@@ -33,6 +33,13 @@ shinyUI(navbarPage(
                      'Double Quote'='"',
                      'Single Quote'="'"),
                    '"')
+          ),
+          hr(),
+          p('If you want a sample .csv or .tsv file to upload,',
+             'you can first download the sample',
+             a(href = 'mtcars.csv', 'mtcars.csv'), 'or',
+             a(href = 'pressure.tsv', 'pressure.tsv'),
+             'files, and then try uploading them.'
           )
         )
       ),
